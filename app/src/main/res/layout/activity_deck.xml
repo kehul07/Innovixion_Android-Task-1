@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".DeckActivity"
+    android:background="#D9CFEA">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Flashcards"
+        android:textSize="24sp"
+        android:padding="16sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="#6945A8"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/flashcardRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:background="@drawable/gradient">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Flashcard"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="250sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        >
+        <ImageView
+            android:id="@+id/backword"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/border2"
+            android:padding="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/forword"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/baseline_arrow_forward_24"
+            android:layout_marginLeft="210dp"
+            android:background="@drawable/border2"
+            android:padding="10dp"
+
+            />
+
+
+    </LinearLayout>
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/add"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="end|bottom"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:src="@android:drawable/ic_input_add" />-->
+    <ImageView
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:padding="16sp"
+        android:src="@drawable/baseline_add_24"
+        android:background="@drawable/bg_button"
+        app:backgroundTint="#6945A8"/>
+</LinearLayout>
